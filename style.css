@@ -80,10 +80,9 @@ button:hover {
 }
 
 img {
-    max-width: 100%;
+    max-width: 92%;
     height: auto;
-    padding-left: 20px;
-
+    border-radius: 10px;
 }
 
 .container {
@@ -126,6 +125,9 @@ img {
 .hero-container .hero--right {
     flex: 1 1 auto;
     width: 100%;
+}
+.hero--right {
+    text-align: right;
 }
 
 .hero--left a {
