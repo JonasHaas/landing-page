@@ -1,7 +1,10 @@
 # landing-page
-learning project - playing around with flexboxes!
+This is the landing-page project as part of [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/landing-page)
 
-live-preview: [https://jonashaas.github.io/landing-page/](https://jonashaas.github.io/landing-page/)
+- This project took me around 2 hours. (I lost some time by rebuilding the HTML structure)
+- flexboxskill++
+
+live-view: [https://jonashaas.github.io/landing-page/](https://jonashaas.github.io/landing-page/)
 
 ---
 Sources:
