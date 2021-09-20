@@ -51,6 +51,19 @@ ul {
     gap: 20px;
 }
 
+li:last-child {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    li {
+        display: none;
+    }
+    li:last-child {
+        display: block;
+    }
+}
+
 a {
     color: var(--bright-text);
     text-decoration: none;
@@ -85,8 +98,26 @@ img {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+    img {
+        max-width: 100%;
+    }
+}
+
 .container {
     padding: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container { 
+        padding: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container { 
+        padding: 20px;
+    }
 }
 
 .container > .inner-container {
@@ -114,11 +145,28 @@ img {
 .header-container .inner-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-container .logo {
     font-size: 24px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    .container.header-container {
+        padding: 20px 100px 0px 100px;
+    }
+
+    .header-container .inner-container {
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container.header-container {
+        padding: 20px 20px 0px 20px;
+    }
 }
 
 .hero-container .hero--left,
@@ -138,8 +186,26 @@ img {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1024px) {
+    .hero-container  .inner-container{ 
+        flex-direction: column-reverse;
+    }
+}
+
 .container.boxes-container {
     padding: 20px 150px 150px 150px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container.boxes-container {
+        padding: 20px 100px 100px 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container.boxes-container {
+        padding: 20px 20px 20px 20px;
+    }
 }
 
 .boxes-container .inner-container{
@@ -150,10 +216,13 @@ img {
 
 .boxes-container .boxes {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 50px;
 }
 
 .boxes .box {
+    flex-shrink: 0;
     max-width: 180px;
     text-align: center;
     font-weight: 300;
@@ -206,6 +275,15 @@ img {
     align-items: center;
     padding: 40px;
     color: var(--text-bright);
+}
+
+@media screen and (max-width: 1024px) {
+    .cta{ 
+        flex-direction: column;
+    }
+    .cta button {
+        margin-right: 0 !important;
+    }
 }
 
 .cta button {
