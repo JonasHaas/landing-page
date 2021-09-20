@@ -3,6 +3,11 @@
     --light-blue: #3882f6;
     --light-grey: #e5e7eb;
     --text-bright: #f9faf8;
+    
+    --h1-text: 48px;
+    --h2-text: 36px;
+    --bigger-text: 24px;
+    --normal-text: 18px;
 }
 
 html {
@@ -19,17 +24,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto, Ubuntu, 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: var(--normal-text);
     color: var(--text-dark);
 }
 
 h1 {
-    font-size: 48px;
+    font-size: var(--h1-text);
     font-weight: 900;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: var(--h2-text);
     font-weight: 900;
     color: var(--dark-blue);
     margin-bottom: 50px;
@@ -40,7 +45,7 @@ p {
 }
 
 strong {
-    font-size: 24px;
+    font-size: var(--bigger-text);
 }
 
 ul {
@@ -149,7 +154,7 @@ img {
 }
 
 .header-container .logo {
-    font-size: 24px;
+    font-size: var(--bigger-text);
     font-weight: 700;
 }
 
@@ -255,13 +260,13 @@ img {
 }
 
 .quotes-container p {
-    font-size: 36px;
+    font-size: var(--h2-text);
     font-weight: 300;
     font-style: italic;
 }
 
 .quotes-container p:last-child {
-    font-size: 24px;
+    font-size: var(--bigger-text);
     font-weight: 700;
     text-align: right;
 }
