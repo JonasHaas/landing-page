@@ -184,11 +184,12 @@ img {
 }
 
 .hero--left a {
-    color: yellow;
+    transition: all .3s ease;
+    text-decoration: underline;
 }
 
 .hero--left a:hover {
-    text-decoration: underline;
+    color: yellow;
 }
 
 @media screen and (max-width: 1024px) {
