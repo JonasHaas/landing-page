@@ -4,6 +4,8 @@ This is the landing-page project as part of [The Odin Project](https://www.theod
 - This project took me around 2 hours. (I lost some time by rebuilding the HTML structure)
 - flexboxskill++
 
+@todo make the menu in mobile clickable
+
 live-view: [https://jonashaas.github.io/landing-page/](https://jonashaas.github.io/landing-page/)
 
 ---
